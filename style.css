@@ -1,0 +1,197 @@
+/* style.css - Ajit's Portfolio Design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #1e3a8a;
+  display: inline-block;
+}
+
+.intro {
+  text-align: center;
+  background: linear-gradient(to right, #93c5fd, #bfdbfe);
+  padding: 5rem 2rem;
+  border-radius: 10px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #1e40af;
+}
+
+.intro .title {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.intro .desc {
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #374151;
+}
+
+.skills span {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #1d4ed8;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 3rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #1e3a8a;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
